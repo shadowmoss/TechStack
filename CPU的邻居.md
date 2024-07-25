@@ -23,6 +23,6 @@ in al 60h   ;从60号端口读入一个字节
 in al,20h  
 out 21h,al  
 对256~65535的端口进行读写时，端口号放在dx中:  
-mov dx,3f8h  ;将端口号送入dx
-in al,dx    ;从3f8h端口读入一个字节
-out dx,al  ;向3f8h端口写入一个字节
+mov dx,3f8h ;将端口号送入dx
+in al,dx ;从3f8h端口读入一个字节  
+out dx,al ;向3f8h端口写入一个字节  
